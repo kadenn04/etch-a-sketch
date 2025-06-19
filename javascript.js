@@ -10,6 +10,7 @@ function createGrid(size) {
         for (j=0;j<size;j++){
             var gridSquare = document.createElement("div");
             gridSquare.classList.add("grid-square");
+            square.style.opacity = "1";
             gridRow.append(gridSquare);
         }
     }
@@ -17,10 +18,8 @@ function createGrid(size) {
     const gridSquares = document.querySelectorAll("div.grid-square");
     gridSquares.forEach((square) => {
         square.addEventListener("mouseover", () =>  {
-            square.style.backgroundColor = "red";
-        });
-        square.addEventListener("mouseover", () => {
-            console.log("HI!");
+            square.style.opacity = "1";
+            console.log((Number(square.style.opacity)));
         });
     });
 }

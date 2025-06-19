@@ -10,17 +10,23 @@
     display: flex;
     border-style: solid;
     border: 0;
-    flex: 0 0 auto;
+    flex: 1 1 auto;
 }
 
 .grid-square {
     background-color: green;
-    width: 30px;
-    height: 30px;
     margin: 0px;
-    flex: 0 0 auto;
+    flex: 1 1 auto;
 }
 
-.grid-square:hover {
-    background-color: red;
+body {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+#prompt-button {
+    width: 200px;
+    height: 90px;
+    font-size: 30px;
 }
