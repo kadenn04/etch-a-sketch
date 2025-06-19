@@ -1,0 +1,23 @@
+#container {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-row {
+    display: flex;
+    border-style: solid;
+    border: 0;
+    flex: 0 0 auto;
+}
+
+.grid-square {
+    background-color: green;
+    width: 30px;
+    height: 30px;
+    margin: 0px;
+    flex: 0 0 auto;
+}
+
+.grid-square:hover {
+    background-color: red;
+}
